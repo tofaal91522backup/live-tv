@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"e:\\\\CSE\\\\template\\\\claude next template\\\\src\\\\\" -Recurse -Force | Select-Object -Property FullName | Sort-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"e:\\\\CSE\\\\template\\\\claude next template\\\\src\\\\\" -Recurse -Force | Select-Object -Property FullName | Sort-Object FullName | ForEach-Object { $_.FullName })",
+      "Bash(npx tsc *)",
+      "Bash(Get-ChildItem -Path \"e:\\\\CSE\\\\template\\\\claude next template\" -Directory)",
+      "Bash(Select-Object Name)"
+    ]
+  }
+}

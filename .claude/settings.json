@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"C:\\\\Users\\\\tofaa\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\e--CSE-MY-CLIENT--KB-TV-Playlist\\\\801ca9a2-df22-4347-879f-4adca96827d6\\\\scratchpad\\\\parse_m3u.py\")",
+      "Bash(start \"\" \"e:\\\\CSE\\\\MY_CLIENT\\\\-KB-TV-Playlist\\\\index.html\")",
+      "Bash(node -e ' *)",
+      "Bash(npm install *)",
+      "Bash(npx eslint *)",
+      "Bash(sleep 3; cat /tmp/nextdev.log 2>&1 | tail -60)",
+      "Read(//tmp/**)",
+      "Bash(powershell -NoProfile -Command \"Get-CimInstance Win32_Process -Filter \\\\\"CommandLine LIKE '%next-server%' OR CommandLine LIKE '%next dev%'\\\\\" | Select-Object ProcessId, CommandLine\")",
+      "Bash(powershell -NoProfile -Command \"taskkill /PID 12708 /T /F\")",
+      "Bash(curl -s -o /tmp/home.html -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(grep -o \"FIFA WORLD CUP 2026\" /tmp/home.html | head -1; grep -o \"KB Live TV\" /tmp/home.html | head -1; echo \"--- dev log tail ---\"; tail -60 /tmp/nextdev.log)",
+      "Bash(grep -iE \"fifa-spotlight|live-tv-section|use-hls-player|channel-browser|video-stage|channels\\\\.json\" /tmp/nextdev.log)",
+      "Bash(start \"\" \"http://localhost:3000/\")"
+    ]
+  }
+}
