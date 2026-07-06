@@ -2,6 +2,11 @@ import { NextRequest } from "next/server";
 import { CHANNEL_DATA } from "@/constants/channels";
 import { proxyPlaylistResponse } from "@/lib/hls-proxy";
 
+// Force the Node.js runtime — edge runtimes on some hosts (Netlify Edge
+// Functions, Vercel Edge) restrict or reject plain http:// outbound fetches,
+// which most of these upstream IPTV sources use.
+export const runtime = "nodejs";
+
 export async function GET(req: NextRequest, { params }: { params: Promise<{ name: string }> }) {
   const { name } = await params;
   const channel = CHANNEL_DATA.channels.find((c) => c.name === name);

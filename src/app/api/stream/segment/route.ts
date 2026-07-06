@@ -1,6 +1,9 @@
 import { NextRequest } from "next/server";
 import { proxySegmentResponse } from "@/lib/hls-proxy";
 
+// Force the Node.js runtime — see [name]/route.ts for why.
+export const runtime = "nodejs";
+
 export async function GET(req: NextRequest) {
   const encoded = req.nextUrl.searchParams.get("u");
   if (!encoded) {
