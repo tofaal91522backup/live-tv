@@ -15,9 +15,9 @@
       "logo": "https://imglink.cc/cdn/RY7jBwPKAr.jpg",
       "group": "Sports",
       "urls": [
+        "https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8",
         "http://103.59.176.72:8083/live1/tracks-v1a1/mono.m3u8?token=123",
-        "http://27.124.71.27/T-Sports/index.m3u8",
-        "https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8"
+        "http://27.124.71.27/T-Sports/index.m3u8"
       ]
     },
     {
@@ -161,8 +161,8 @@
       "logo": "https://imglink.cc/cdn/kIiut6WBq0.jpg",
       "group": "Sports",
       "urls": [
-        "http://27.124.71.27/beIN_Sports_3/index.m3u8",
-        "https://andro.226503.xyz/checklist/androstreamlivebs3.m3u8"
+        "https://andro.226503.xyz/checklist/androstreamlivebs3.m3u8",
+        "http://27.124.71.27/beIN_Sports_3/index.m3u8"
       ]
     },
     {
@@ -638,8 +638,8 @@
       "logo": "https://imglink.cc/cdn/B1Dn0E5UKs.png",
       "group": "Bangladesh",
       "urls": [
-        "http://alvetv.com/moviebanglatv/8080/index.m3u8",
-        "https://edge2.roarzone.net:8447/roarzone/edge3/movie_bangla/index.m3u8?token=f1153ce106f107a9c3e37bd2b551e3d0184519c3-cfc48222db91c2002e7fae0d54efda6b-1780020918-1780010118"
+        "https://edge2.roarzone.net:8447/roarzone/edge3/movie_bangla/index.m3u8?token=f1153ce106f107a9c3e37bd2b551e3d0184519c3-cfc48222db91c2002e7fae0d54efda6b-1780020918-1780010118",
+        "http://alvetv.com/moviebanglatv/8080/index.m3u8"
       ]
     },
     {
@@ -880,8 +880,8 @@
       "logo": "https://imglink.cc/cdn/RY7jBwPKAr.jpg",
       "group": "Sports",
       "urls": [
-        "http://190.108.83.69:8000/play/a05w/72644547.m3u8",
-        "https://1nyaler.streamhostingcdn.top/stream/106/index.m3u8"
+        "https://1nyaler.streamhostingcdn.top/stream/106/index.m3u8",
+        "http://190.108.83.69:8000/play/a05w/72644547.m3u8"
       ]
     },
     {

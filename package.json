@@ -5,7 +5,7 @@
   "author": "tofaal9152",
   "github": "www.github.com/tofaal9152",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "dotenv -e .env next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",

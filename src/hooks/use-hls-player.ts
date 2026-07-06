@@ -63,10 +63,12 @@ export function useHlsPlayer(videoRef: React.RefObject<HTMLVideoElement | null>)
         }
       };
 
+      const proxiedUrl = `/api/stream/${encodeURIComponent(channel.name)}?i=${attempt}`;
+
       if (Hls.isSupported()) {
         const hls = new Hls({ maxBufferLength: 30, enableWorker: true });
         hlsRef.current = hls;
-        hls.loadSource(url);
+        hls.loadSource(proxiedUrl);
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, () => {
           setStatus("playing");
@@ -76,7 +78,7 @@ export function useHlsPlayer(videoRef: React.RefObject<HTMLVideoElement | null>)
           if (data.fatal) tryNext();
         });
       } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-        video.src = url;
+        video.src = proxiedUrl;
         video.addEventListener("loadedmetadata", () => setStatus("playing"), { once: true });
         video.addEventListener("error", tryNext, { once: true });
         video.play().catch(() => {});
